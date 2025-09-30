@@ -7,7 +7,7 @@
    $phone_number = !empty($args["globals"]["in_content_cta"]["phone"])
     ? $args["globals"]["in_content_cta"]["phone"]
     : $args["site_info"]["phone"];
-//    $telLink = get_clean_tel_link($phone_number, $args["site_info"]["country_code"]);
+   $telLink = get_clean_tel_link($phone_number, $args["site_info"]["country_code"]);
    $target = $args["globals"]["in_content_cta"]["target"] == "true" ? "_blank" : "_self";
    $schedule_id = "";
    if (isset($args["globals"]["in_content_cta"]["id"]) && !empty($args["globals"]["in_content_cta"]["id"]) && ($args["globals"]["in_content_cta"]["id"] == "service_titan" || $args["globals"]["in_content_cta"]["id"] == "schedule_engine")) {
